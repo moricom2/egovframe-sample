@@ -3,4 +3,4 @@
 
 
 #### Step1
-![maven-docker-build-step1](.src/main/webapp/images/maven-docker-build-step1.jpg)
+![maven-docker-build-step1](src/main/webapp/images/maven-docker-build-step1.jpg)
