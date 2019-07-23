@@ -5,4 +5,4 @@
 >> cd egovframe-sample  
 >> git checkout devbox  
 >> mvn clean package docker:build  
->> exit
+>> exit  
