@@ -4,3 +4,12 @@
 
 #### Step1
 ![maven-docker-build-step1](src/main/webapp/images/maven-docker-build-step1.jpg)
+
+#### Step2
+![maven-docker-build-step2](src/main/webapp/images/maven-docker-build-step2.jpg)
+
+#### Step3
+![maven-docker-build-step3](src/main/webapp/images/maven-docker-build-step3.jpg)
+
+#### Step4
+![maven-docker-build-step4](src/main/webapp/images/maven-docker-build-step4.jpg)
