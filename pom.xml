@@ -301,8 +301,6 @@
 							<include>${project.build.finalName}.war</include>
 						</resource>
 					</resources>
-					<dockerHost>https://192.168.99.100:2376</dockerHost>
-					<dockerCertPath>C:\\Users\\Administrator\\.docker\\machine\\certs</dockerCertPath>
 				</configuration>
 			</plugin>
 <!-- end Docker Maven Plugin -->		    
