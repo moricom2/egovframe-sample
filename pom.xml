@@ -284,6 +284,28 @@
 		            </execution>
 		        </executions>
 		    </plugin>
+<!-- Docker Maven Plugin -->
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.4.10</version>
+				<configuration>
+					<imageName>${artifactId}</imageName>
+					<baseImage>tomcat</baseImage>
+					<runs>rm -rf /usr/local/tomcat/webapps/${project.build.finalName}</runs>
+					<entryPoint>["catalina.sh", "run"]</entryPoint>
+					<resources>
+						<resource>
+							<targetPath>/usr/local/tomcat/webapps/</targetPath>							
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.war</include>
+						</resource>
+					</resources>
+					<dockerHost>https://192.168.99.100:2376</dockerHost>
+					<dockerCertPath>C:\\Users\\Administrator\\.docker\\machine\\certs</dockerCertPath>
+				</configuration>
+			</plugin>
+<!-- end Docker Maven Plugin -->		    
         </plugins>
     </build>
     <reporting>
