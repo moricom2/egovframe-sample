@@ -1,7 +1,7 @@
 node {
 	def imgName = "localhost:5000/egovframe-sample:latest"
 	def appName = "egovframe-sample"
-	def gitURL = "http://192.168.63.180/root/egovframe-sample.git"
+	def gitURL = "http://192.168.63.180/demo/egovframe-sample.git"
 	def sonarURL = "http://192.168.63.180:9000"
 	stage('1. Source Code Pull'){
 		git branch:'master', url:gitURL
