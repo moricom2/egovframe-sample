@@ -18,7 +18,7 @@ node {
 	stage('5. Container Image Build'){
 		sh 'docker build -t ' + imgName + ' .'
 	}  	
-	stage('6. Container Image Share'){
+	stage('6. Container Image Push'){
 		sh 'docker push ' + imgName
 	}  	
 	stage('7. Container Run'){
@@ -26,6 +26,6 @@ node {
 		if (containerID != '') {
 			sh 'docker rm -f ' + containerID
 		}
-		sh 'docker run -d -p 8888:8080 --rm --name ' + appName + ' ' + imgName
+		sh 'docker run -d -p 88:8080 --rm --name ' + appName + ' ' + imgName
 	}
 }
